@@ -8,7 +8,7 @@ function App() {
     fetch('https://jsonplaceholder.typicode.com/users')
       .then(response => response.json())
       .then(data => {
-        console.log('Fetched users:', data); // Debugging
+        console.log('Fetched users:', data); 
         setUsers(data);
       })
       .catch(error => console.error('Error fetching data:', error));
